@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Data App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <h1>📊 My Data Visualization App</h1>
+
+  <!-- Upload CSV -->
+  <input type="file" id="fileInput">
+
+  <!-- Chart selector -->
+  <select id="chartType">
+    <option value="bar">Bar Chart</option>
+    <option value="line">Line Chart</option>
+    <option value="pie">Pie Chart</option>
+  </select>
+
+  <!-- Button -->
+  <button onclick="loadChart()">Generate Chart</button>
+
+  <!-- Canvas -->
+  <canvas id="chartCanvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
